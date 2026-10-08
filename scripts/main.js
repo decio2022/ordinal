@@ -39,7 +39,7 @@ function init() {
         yn: x => (x ? "ON" : "OFF")
       },
 
-      oo: (x, b) => new Ordinal(x, b).string(4),
+      oo: (x, b) => new Ordinal(x, b).string(20),
 
 			ppGain,
 			wuarkGain,

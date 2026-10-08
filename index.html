@@ -44,7 +44,7 @@
         <h1>
           <span v-html = "game.ord.stringWithBase"></span>
         </h1>
-        <h3 v-if = "game.baseReductions.gte(10)">Base: {{ toNotation(new ExpantaNum(game.ord.b)) }} ({{ toNotation(game.baseReductions) }} base reductions)</h3>
+        <h3 v-if = "game.baseReductions.gte(4)">Base: {{ toNotation(new ExpantaNum(game.ord.b)) }} ({{ toNotation(game.baseReductions) }} base reductions)</h3>
 
         <button onclick = "game.ord.n = game.ord.n.plus(1)">Increment</button>
 				<button onclick = "prestige()" v-if = "game.ord.n.gte(10)">Prestige for +{{ toNotation(ppGain(), 1, 3) }} PP</button>

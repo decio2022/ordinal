@@ -8,7 +8,7 @@ function updateTabs() {
 	)
 }
 
-function toNotation(n, p = 1, p2 = 2, idk = 1e4) { // eslint-disable-line
+function toNotation(n, p = 5, p2 = 5, idk = 1e6) { // eslint-disable-line
   if (n.eq(0)) return n.toFixed(p)
   if (n.lt(0.1)) return "<0.1"
   if (n.lt(idk)) return n.toFixed(p)
