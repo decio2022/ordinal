@@ -3,7 +3,7 @@ function prestige() {
   game.prestigePoints = game.prestigePoints.plus(ppGain())
   game.prestiges = game.prestiges.plus(1)
 
-  game.ord = new Ordinal(nD(0), 100 - game.baseReductions)
+  game.ord = new Ordinal(nD(0), 1000 - game.baseReductions)
 
   game.mtx.doubleIncs = false
 
